@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                bat "git clone https://github.com/saraths-sps/my-app.git" 
+                bat "mvn test -f my-app" 
             }
         }
         
