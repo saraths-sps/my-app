@@ -1,12 +1,11 @@
 pipeline {
-    agent any 
+    agent any
     stages {
-        stage('Build') { 
+        stage('Cloning git') {
             steps {
-                echo 'null'
-		git "https://github.com/saraths-sps/my-app.git"
+               git 'https://github.com/saraths-sps/sample.git'
             }
         }
-        
     }
 }
+
