@@ -1,0 +1,12 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('maven') {
+            steps {
+                mvn clean
+                mvn test
+            }
+        }
+    }
+}
