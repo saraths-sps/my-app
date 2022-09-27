@@ -2,10 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('maven') {
+        stage('git') {
             steps {
-                mvn clean
-                mvn test
+                git https://github.com/saraths-sps/my-app.git
             }
         }
     }
